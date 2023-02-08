@@ -1,0 +1,168 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+font-family: 'Overpass', sans-serif;
+*/
+
+:root {
+    --light-grey-bg: hsl(217, 12%, 63%, .1);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --highlight: #262f38;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    background-color:hsl(216, 12%, 8%);
+}
+
+body, 
+.rtg-wrap,
+.rtg-wrap ul {
+    display: flex;
+}
+
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.rtg-wrap, 
+.score-wrap {
+    background-color: var(--dark-blue);
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2em;
+    width: 350px;
+    margin: auto auto;
+}
+
+.rtg-wrap img {
+    background-color: var(--light-grey-bg);
+    width: 1rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.rtg-wrap h1 {
+    font-size: 2em;
+    padding-bottom: 2%;
+}
+
+.rtg-wrap p {
+    color: var(--medium-grey);
+    margin-top: 0;
+}
+
+.rtg-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.rtg-wrap li {
+    background-color: var(--light-grey-bg);
+    border-radius: 50%;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    color: var(--light-grey)
+}
+
+.rtg-wrap li:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.rtg-wrap li:not(:last-child) {
+    margin-right: 5%;
+}
+
+.submit-btn {
+    text-align: center;
+    width: 100%;
+    background-color: var(--orange);
+    color: white;
+    border-style: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    letter-spacing: .15em;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+li:target {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#score-show {
+    background-color: var(--light-grey-bg);
+    color: orange;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
+}
+
+.score-wrap {
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.thank-msg {
+    color: var(--light-grey);
+    margin: 0;
+}
+
+.thank-img {
+    width: 50%;
+
+}
